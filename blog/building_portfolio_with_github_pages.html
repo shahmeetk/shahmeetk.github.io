@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Professional Tech Portfolio with GitHub Pages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-color: #292929;
+            --secondary-text: #757575;
+            --background-color: #fff;
+            --accent-color: #0284c7;
+            --border-color: #e6e6e6;
+            --code-background: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Serif Pro', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 30px 0 15px;
+            color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .subtitle {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.2rem;
+            color: var(--secondary-text);
+            margin-bottom: 30px;
+        }
+
+        .author-info {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .author-info p {
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        code {
+            font-family: monospace;
+            background-color: var(--code-background);
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+
+        pre {
+            background-color: var(--code-background);
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        ul, ol {
+            margin: 20px 0 20px 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: var(--secondary-text);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+            margin-top: -15px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Building a Professional Tech Portfolio with GitHub Pages</h1>
+        <div class="subtitle">A comprehensive guide based on my experience creating <a href="https://shahmeetk.github.io/" target="_blank">https://shahmeetk.github.io/</a></div>
+    </header>
+
+    <main>
+        <img src="../assets/images/prof2.jpg" alt="Portfolio Banner">
+        <div class="image-caption">My professional portfolio showcasing AI, Cloud, and DevSecOps expertise</div>
+
+        <p>In today's competitive tech landscape, having a standout professional portfolio is no longer optional—it's essential. As a Cloud & AI Practice Lead specializing in AIOps and DevSecOps, I recently rebuilt my portfolio using GitHub Pages to showcase my expertise in a way that resonates with recruiters and peers alike.</p>
+
+        <p>In this guide, I'll walk you through the exact process I used to create <a href="https://shahmeetk.github.io/" target="_blank">my portfolio</a>, from initial setup to deployment and optimization.</p>
+
+        <h2>Why GitHub Pages?</h2>
+
+        <p>Before diving into the how-to, let's address why GitHub Pages is an excellent choice for tech professionals:</p>
+
+        <ol>
+            <li><strong>It's free</strong> with no hidden costs or limitations</li>
+            <li><strong>It integrates with your existing GitHub workflow</strong></li>
+            <li><strong>It demonstrates your technical abilities</strong> just by existing</li>
+            <li><strong>It gives you complete control</strong> over design and content</li>
+            <li><strong>It's automatically version-controlled</strong></li>
+        </ol>
+
+        <p>Now, let's get into the step-by-step process.</p>
+
+        <h2>Step 1: Repository Setup and Structure</h2>
+
+        <p>I started by creating a new GitHub repository named "Resume" and initializing it with a README.md file. After cloning it locally, I established a clean, organized structure:</p>
+
+        <pre><code>Resume/
+├── assets/
+│   ├── css/styles.css
+│   ├── js/script.js
+│   └── images/
+├── index.html
+├── README.md
+├── .nojekyll
+└── .github/workflows/deploy.yml</code></pre>
+
+        <p>This structure separates concerns and makes maintenance straightforward. The <code>.nojekyll</code> file prevents GitHub from processing the site with Jekyll, which can cause unexpected behavior with certain file paths.</p>
+
+        <h2>Step 2: Creating the HTML Foundation</h2>
+
+        <p>My <code>index.html</code> file serves as the backbone of the portfolio. Here's a simplified version of the structure I used:</p>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Meet Shah - Cloud & AI Practice Lead&lt;/title&gt;
+    &lt;link rel="stylesheet" href="assets/css/styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;!-- Profile section with photo, name, title --&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;!-- Navigation menu --&gt;
+    &lt;/nav&gt;
+
+    &lt;section id="about"&gt;
+        &lt;!-- About section highlighting AI, Cloud, DevSecOps expertise --&gt;
+    &lt;/section&gt;
+
+    &lt;section id="experience"&gt;
+        &lt;!-- Professional experience with timeline --&gt;
+    &lt;/section&gt;
+
+    &lt;section id="skills"&gt;
+        &lt;!-- Skills categorized by domain --&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Additional sections for education, certifications, etc. --&gt;
+
+    &lt;footer&gt;
+        &lt;!-- Copyright and contact information --&gt;
+    &lt;/footer&gt;
+
+    &lt;script src="assets/js/script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <p>I made sure to include semantic HTML5 elements for better accessibility and SEO.</p>
+
+        <h2>Step 3: Styling with Modern CSS</h2>
+
+        <p>For the visual design, I created a clean, professional look using CSS variables for consistent styling:</p>
+
+        <pre><code>:root {
+    --primary-color: #0284c7;
+    --secondary-color: #0ea5e9;
+    --dark-color: #0c4a6e;
+    --light-color: #e0f2fe;
+    --accent-color: #3b82f6;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}</code></pre>
+
+        <p>For the profile image, I used a circular frame with subtle hover effects:</p>
+
+        <pre><code>.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    object-position: top center; /* Ensures face is centered */
+    transition: var(--transition);
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+    border-color: white;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}</code></pre>
+
+        <p>For responsive layouts, I used CSS Grid and Flexbox:</p>
+
+        <pre><code>.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}</code></pre>
+
+        <p>And media queries for mobile responsiveness:</p>
+
+        <pre><code>@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}</code></pre>
+
+        <h2>Step 4: Adding Interactivity with JavaScript</h2>
+
+        <p>To enhance user experience, I added smooth scrolling and active state highlighting:</p>
+
+        <pre><code>document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            window.scrollTo({
+                top: targetSection.offsetTop - 70,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Add active class to navigation items on scroll
+    const sections = document.querySelectorAll('.section');
+
+    window.addEventListener('scroll', function() {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+
+            if (pageYOffset >= sectionTop - 100) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+});</code></pre>
+
+        <h2>Step 5: Crafting Content That Resonates</h2>
+
+        <p>The most crucial aspect of my portfolio was tailoring the content to highlight my expertise in AI, Cloud Management, and DevSecOps. I used this structure for my about section:</p>
+
+        <pre><code>&lt;p class="highlight-text"&gt;Pioneering the convergence of AI, Cloud, and DevSecOps to create intelligent, secure, and scalable enterprise solutions.&lt;/p&gt;
+
+&lt;p&gt;As a &lt;strong&gt;Cloud & AI Practice Lead&lt;/strong&gt;, I specialize in building AI-powered cloud ecosystems that transform how organizations operate. My expertise lies in implementing &lt;strong&gt;AIOps solutions&lt;/strong&gt; that leverage machine learning for predictive analytics, automated remediation, and intelligent observability across complex cloud environments.&lt;/p&gt;
+
+&lt;p&gt;With a deep background in &lt;strong&gt;multi-cloud architecture&lt;/strong&gt; (Azure, AWS, GCP) and &lt;strong&gt;DevSecOps practices&lt;/strong&gt;, I integrate security throughout the development lifecycle while enabling rapid innovation.&lt;/p&gt;</code></pre>
+
+        <p>For skills, I created visual highlight boxes with icons:</p>
+
+        <pre><code>&lt;div class="highlight-item"&gt;
+    &lt;div class="highlight-icon"&gt;&lt;i class="fas fa-brain"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;div class="highlight-content"&gt;
+        &lt;h4&gt;AI & Machine Learning&lt;/h4&gt;
+        &lt;p&gt;Implementing AIOps, predictive analytics, and intelligent automation to revolutionize IT operations&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h2>Step 6: Setting Up Automatic Deployment</h2>
+
+        <p>To ensure my portfolio stays up-to-date, I created a GitHub Actions workflow file at <code>.github/workflows/deploy.yml</code>:</p>
+
+        <pre><code>name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          force_orphan: true</code></pre>
+
+        <p>This configuration automatically deploys my site whenever I push changes to the main branch, making updates seamless.</p>
+
+        <h2>Step 7: Optimizing for Recruiters</h2>
+
+        <p>To ensure my portfolio resonates with recruiters in the AI and cloud space, I:</p>
+
+        <ol>
+            <li><strong>Used industry-specific keywords</strong> throughout the content</li>
+            <li><strong>Highlighted quantifiable achievements</strong> from my experience</li>
+            <li><strong>Organized information</strong> for quick scanning</li>
+            <li><strong>Ensured mobile responsiveness</strong> for viewing on any device</li>
+            <li><strong>Optimized loading speed</strong> by compressing assets</li>
+        </ol>
+
+        <h2>Results and Benefits</h2>
+
+        <p>Since launching my portfolio at <a href="https://shahmeetk.github.io/" target="_blank">https://shahmeetk.github.io/</a>, I've received positive feedback from recruiters and peers alike. The benefits have been numerous:</p>
+
+        <ol>
+            <li><strong>Increased visibility</strong> in my professional network</li>
+            <li><strong>More targeted job inquiries</strong> aligned with my expertise</li>
+            <li><strong>A professional showcase</strong> that demonstrates both my technical skills and my attention to detail</li>
+            <li><strong>Complete control</strong> over my professional brand</li>
+            <li><strong>Easy updates</strong> through the GitHub workflow</li>
+        </ol>
+
+        <h2>Conclusion</h2>
+
+        <p>Creating a professional portfolio with GitHub Pages is a powerful way to showcase your skills while demonstrating your technical abilities. The platform is free, flexible, and integrates perfectly with your existing GitHub workflow.</p>
+
+        <p>By following this guide, you can create a portfolio that not only looks professional but also effectively communicates your value to potential employers or clients.</p>
+
+        <p>Feel free to explore my portfolio at <a href="https://shahmeetk.github.io/" target="_blank">https://shahmeetk.github.io/</a> for inspiration, and don't hesitate to reach out if you have any questions!</p>
+    </main>
+
+    <div class="author-info">
+        <p><strong>Meet Shah</strong></p>
+        <p>Cloud & AI Practice Lead | AIOps | DevSecOps | Multi-Cloud Architect</p>
+        <p><a href="https://www.linkedin.com/in/meetshah10290/" target="_blank">LinkedIn</a> | <a href="https://github.com/shahmeetk" target="_blank">GitHub</a></p>
+    </div>
+</body>
+</html>

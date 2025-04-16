@@ -1,129 +1,143 @@
-What is this?
-=============
+# Meet Shah - Professional Portfolio
 
-See what this is all about: [http://open-learning-exchange.github.io/](http://open-learning-exchange.github.io/).
+<div align="center">
 
-How to Contribute
-=================
+<img src="assets/images/prof2.jpg" alt="Meet Shah" width="300" style="border-radius: 10px;" />
 
-First things first
-------------------
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Website-0284c7?style=for-the-badge&logo=github)](https://shahmeetk.github.io)
+[![Resume](https://img.shields.io/badge/Resume-View%20Online-0ea5e9?style=for-the-badge&logo=adobe)](https://rxresu.me/shahmeetk/cloud-and-ai-practice-lead)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/meetshah10290/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/shahmeetk)
 
-Learn [Markdown](https://help.github.com/articles/github-flavored-markdown)! Then check out MDwiki's [quick start](http://dynalon.github.io/mdwiki/#!quickstart.md). 
+</div>
 
-Whenever you feel stuck, go to [MDwiki's own site](http://mdwiki.info) for further information.
+## 👨‍💻 About Me
 
+I am a **Cloud & AI Practice Lead** specializing in the intersection of artificial intelligence, cloud computing, and security. My expertise centers on implementing **AIOps solutions** that leverage machine learning for predictive analytics, automated remediation, and intelligent observability across complex cloud environments.
 
-One Wiki Only? Fork It.
------------------------
+With deep expertise in **multi-cloud architecture** (Azure, AWS, GCP) and **DevSecOps practices**, I build secure, scalable AI-powered cloud ecosystems that transform how organizations operate. Currently pursuing a **Ph.D. in Computer Science** focused on AI-driven cloud infrastructure and intelligent automation, I'm researching next-generation approaches that combine advanced AI techniques with robust security frameworks.
 
-First off fork this repo and call it something like `<MyProject>-wiki`.
+## 🚀 Professional Experience
 
-Multiple Wikis? Clone It.
--------------------------
+### Cloud & AI Practice Lead | Network International LLC
+*Oct 2020 – Present | Dubai, UAE*
 
-In case would you like to create more than one wiki for the same GitHub user or organization, then forking won't cut it. At the moment of this writing GitHub won't allow you to fork a single repository multiple times for the same account.
+- Lead the Cloud & AI practice, driving innovation and digital transformation initiatives
+- Architect and implement AIOps solutions for predictive operations and intelligent automation
+- Design and deploy multi-cloud infrastructure with a focus on security, scalability, and cost optimization
+- Establish DevSecOps practices and CI/CD pipelines for accelerated software delivery
 
-There's a workaround to this, however on GitHub's web interface you won't see the sign that says "forked from" in your cloned repository.
+### Lead Site Reliability Engineer, DevSecOps Role | Emirates Group IT
+*April 2019 – Oct 2020 | Dubai, UAE*
 
-Below instructions how to clone this repository using the CLI:
+- Led SRE initiatives to improve system reliability, performance, and observability
+- Implemented DevSecOps practices and security automation across the development lifecycle
+- Designed and managed cloud infrastructure on Azure and AWS
+- Established monitoring and alerting systems for proactive issue detection and resolution
 
-**First off, create a new (empty) repository on GitHub, then;**
+### Sr. Software Engineer, Lead DevOps Role | eInfochips (An Arrow Company)
+*Oct 2016 – Apr 2019 | Ahmedabad, India*
 
-```bash
-git clone https://github.com/exalted/mdwiki-seed.git
-cd mdwiki-seed
-git remote add foobar <HTTPS/SSH Clone URL of the New Repository>
-git push foobar gh-pages
-```
+- Led DevOps initiatives and CI/CD implementation for multiple projects
+- Designed and managed cloud infrastructure on AWS and Azure
+- Implemented containerization and orchestration solutions using Docker and Kubernetes
+- Established monitoring and logging solutions for improved system observability
 
-Create a New Wiki
------------------
+## 🔧 Skills & Expertise
 
-It all begins by creating an initial file structure for any language that you would like to support. For example, if you're interested having a wiki in English, then you will duplicate `ll_CC` folder and rename your copy to `en`. (For a complete list of languages [`ll`] and country codes [`CC`] [see here](http://msdn.microsoft.com/en-us/library/ee825488).)
+### AI/ML & AIOps Initiatives
+- AI Design: AI Flow Builder, Agent Creation, MCP Connectors
+- AI Observability: OpenTelemetry + Grafana
+- Predictive Ops & ML Tooling: Azure ML, Databricks
+- Automation: GPT Agents, Azure Bot, OpenAI API
+- DataOps: Azure Synapse, Data Lake Gen2
 
-`ll_CC` is a starter template folder which you shouldn't ever edit directly, since you may loose your changes when MDwiki gets updated later.
+### DevSecOps & CI/CD
+- CI/CD Tools: Jenkins, GitHub Actions, GitLab, Bamboo, CircleCI
+- Infrastructure as Code: Terraform, CloudFormation, ARM Templates, Ansible
+- Containerization: Docker, Kubernetes (AKS, EKS, OKE), OpenShift
+- Security & Compliance: Prisma Cloud, Veracode, Snyk, Azure Defender
 
-> If you want to have your wiki in more than one language, then you duplicate `ll_CC` as many times as necessary and rename each copy with the appropriate language and country code. (Country code is optional and it is only useful if you want to distinguish, for instance, American English from British English, such as: `en_US` and `en_GB`.)
+### Monitoring, Logging & Incident Response
+- APM & Observability: Prometheus, Grafana, Datadog, AppDynamics, New Relic
+- Incident Management: PagerDuty, ServiceNow, JIRA
+- SLA/KPI Tracking, SRE Best Practices, Production Readiness
 
-Getting Started
----------------
+### Project Delivery & Agile
+- Agile, Scrum, DevSecOps Coaching, Program-Level Ownership
+- SLA Definitions, Stakeholder Management, Risk-Based Estimation
 
-_You should have a language wiki folder by now, if not, go back and read above to create one._
+## 🎓 Education
 
-Suppose your first wiki is going to be in English, hence you must have a folder called `en`, as previously described.
+- **Ph.D., Computer Science (Ongoing)** - Gujarat University, Ahmedabad, India
+  - Research Focus: AIOps, AI-driven Cloud Infrastructure, Observability & Intelligent Automation
+- **M.Tech., Networking & Cloud Technology** - Gujarat University (2014)
+  - Thesis: Secure and Scalable Deployment Models for Hybrid Cloud Infrastructures
+- **B.E., Electronics & Telecommunication Engineering** - Sardar Patel University (2011)
 
-1. Open `index.html` file with your favorite plain text editor (the one that is at the same level where `ll_CC` and your language folder is located, **NOT the one inside your language folder**).
-1. Find where it says "Override `ll_CC` below with your default language and country code."
-1. Change refresh meta tag from `url=ll_CC/` to `url=en/` **(trailing `/` is very important).**
+## 📜 Certifications
 
-Structure
----------
+I hold numerous certifications across multiple platforms. View my complete certification collection at [github.com/shahmeetk/Certificates](https://github.com/shahmeetk/Certificates).
 
-_All file references here are relative to their respective language folder._
+### AI Certifications
+- ISO 42001 Lead AI Auditor and Implementer
+- AI-104 Azure AI Fundamentals
+- AWS AI Certified Engineer
+- GCP GenAI Certified
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `index.md` | File | Starting point (a.k.a. "home page") for your wiki. **Note this is not the `index.html`, but `index.md`**! |
-| `navigation.md` | File | Various settings of your wiki (e.g., name of your wiki, items in the navigation bar at the top, etc.) |
-| `config.json` | File | If you don't know what this is for, don’t touch it. |
-| `pages` | Folder | Ideally, inside this folder, you create one `*.md` file for every page inside your wiki (e.g., `foo.md`, `much-longer-names-are-also-okay.md`, etc.) You can also create as many subfolders as you need, just remember to link them accordingly. |
-| `uploads` | Folder | An example folder structure where you could put other files. **Although it is best to host your files somewhere else, like Dropbox, or a CDN, etc.** |
+### Microsoft Certified
+- DevOps Engineer Expert
+- Microsoft Azure Architect Technologies
+- Microsoft Azure Admin Associate
+- Azure AZ-900 Fundamental Certified
+- Microsoft DevOps Solutions
 
-Best Practices
---------------
+### AWS & GCP
+- AWS Certified DevOps Engineer - Professional
+- Certified Solutions Architect – Associate
+- Big Data and Machine Learning Fundamentals
+- Core Infrastructure
+- DevOps Architect Expert
 
-### Relative URLs
+## 📊 Projects & Publications
 
-Instead of using absolute URLs when linking one wiki page to another, use relative URLs.
+- **Study on 6LoWPAN Routing Protocols with SD aspects in IoT** - Published in IEEE
+- **Enterprise AIOps Implementation** - Network International
+- **Multi-Cloud Governance Framework** - Emirates Group IT
+- **DevSecOps Transformation** - eInfochips
 
-For instance if `en/pages/foo.md` page had to link to `en/pages/bar.md`, it is enough to just add `[Click here](bar.md)` in your markdown.
+## 📂 Repository Structure
 
-### Don't Host Your Uploads in Git(Hub)
+This repository is organized into two main sections:
 
-Instead of hosting your uploads inside the `uploads` folder, consider using Dropbox, Google Drive, or a CDN.
+### 1. Portfolio Website
 
-### Add References to Uploads
+The main portfolio website is accessible at [https://shahmeetk.github.io](https://shahmeetk.github.io) and contains:
 
-**Whenever you can, avoid hosting your uploads using Git(Hub).**
+- `index.html` - The main entry point for the portfolio
+- `assets/` - Directory containing all portfolio-related assets:
+  - `css/` - Stylesheet files
+  - `js/` - JavaScript files
+  - `images/` - Profile photos and other images
+  - `cloud-and-ai-practice-lead.pdf` - Downloadable PDF resume
 
-If you _must_ add references to files hosted inside the `uploads` folder here's how to do it, for instance: `![Image Title](uploads/images/foo.png)`. Add that in your markdown and you're good to go.
+### 2. Blog Content
 
+Technical blog posts and guides are available in the `blog/` directory:
 
-How to Preview
-==============
+- [Building a Professional Tech Portfolio with GitHub Pages](https://shahmeetk.github.io/blog/building_portfolio_with_github_pages.html) - A comprehensive guide on creating your own professional portfolio using GitHub Pages
 
-In order to preview your changes locally, prior to publishing online, you may need to take some actions. Below some starting points for each operating system, also check out MDwiki's [frequently asked questions](http://dynalon.github.io/mdwiki/#!faq.md) section for some ideas.
+## 🔄 Automatic Updates
 
-Mac OS
-------
+This portfolio is set up with GitHub Actions to automatically deploy updates to GitHub Pages whenever changes are pushed to the main branch. This ensures that my portfolio is always up-to-date with my latest achievements and projects. Visit [shahmeetk.github.io](https://shahmeetk.github.io) to see the live version.
 
-The easiest way to serve up static sites on a Mac is to use [Anvil](http://anvilformac.com). Go ahead and download it from their website, install and add a site using the status bar icon: simply select the folder where your wiki is located on your Mac.
+## 📫 Contact Me
 
-If you don't want to download any apps, you can use the Terminal on your Mac and Python. To do this, go to your site folder in the Terminal app and type `python -m SimpleHTTPServer 8000`. This will start running a local server which you can navigate to by typing the URL `localhost:8000` in any web browser.
+- **Email**: [shahmeetk@gmail.com](mailto:shahmeetk@gmail.com)
+- **LinkedIn**: [linkedin.com/in/meetshah10290](https://www.linkedin.com/in/meetshah10290/)
+- **GitHub**: [github.com/shahmeetk](https://github.com/shahmeetk)
+- **Location**: Dubai, United Arab Emirates
 
-Windows
--------
+## 📝 License
 
-Text editors like [Brackets](http://brackets.io/), and [VS Code](https://code.visualstudio.com/) and [Atom](https://atom.io/) (with extensions) can be used to preview your files locally. However, it is recommended that you use the online GitHub editor and RawGit to make and view your changes in your own branch of your fork of this repository because this is the only sure way to preview your changes for live accuracy.
-
-Linux
------
-
-You can use [Prax](http://ysbaddaden.github.io/prax/). Prax is a pure ruby alternative to Pow!! that runs on GNU/Linux.
-
-
-For Developers
-==============
-
-You don't need to read below here or do anything at all if you're only interested creating your own wiki. This section is for developers or maintainers of this repository.
-
-Make changes to MDwiki
--------------
-
-1. If you haven't already, [install Node](https://docs.npmjs.com/getting-started/installing-node).
-2. Open a command prompt/shell/git bash and navigate to your repo's directory.
-3. Run `npm install` to install mdwiki dependencies.
-4. For development, you can run `./node_modules/.bin/grunt devel` or `grunt devel` if you have grunt installed globally.  This will start grunt watching the index.tmpl and *.js files for changes, which you can view at `localhost:35729`. The index.html file that it builds is the debug version of the html with the full js files.
-5. As a note, the index.tmpl is where our custom CSS can be found.  Please only add CSS within the comment denoted section.
-6. Once you have completed your changes, run `./node_modules/.bin/grunt release` to build an index.html with minified js.
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
