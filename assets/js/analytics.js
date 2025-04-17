@@ -1,4 +1,19 @@
 // Google Analytics 4 Enhanced Event Tracking
+(function() {
+    // Send a direct page view event
+    if (typeof gtag === 'function') {
+        gtag('event', 'direct_page_view', {
+            'page_title': document.title,
+            'page_location': window.location.href,
+            'page_path': window.location.pathname,
+            'send_to': 'G-WXYSSSTTMB'
+        });
+        console.log('Direct page view event sent');
+    } else {
+        console.error('gtag function not available for direct page view');
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     // Check if gtag function exists
     if (typeof gtag !== 'function') {
@@ -11,7 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
         gtag('event', 'page_view', {
             'page_title': document.title,
             'page_location': window.location.href,
-            'page_path': window.location.pathname
+            'page_path': window.location.pathname,
+            'send_to': 'G-WXYSSSTTMB'
         });
         console.log('Page view tracked: ' + document.title);
         
@@ -22,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('event', 'download', {
                     'event_category': 'resume',
                     'event_label': 'PDF Resume Download',
-                    'value': 1
+                    'value': 1,
+                    'send_to': 'G-WXYSSSTTMB'
                 });
                 console.log('PDF Resume download tracked');
             });
@@ -35,7 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('event', 'view_item', {
                     'event_category': 'resume',
                     'event_label': 'Online Resume View',
-                    'value': 1
+                    'value': 1,
+                    'send_to': 'G-WXYSSSTTMB'
                 });
                 console.log('Online Resume view tracked');
             });
@@ -49,7 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('event', 'click', {
                     'event_category': 'external_link',
                     'event_label': url,
-                    'value': 1
+                    'value': 1,
+                    'send_to': 'G-WXYSSSTTMB'
                 });
                 console.log('External link click tracked: ' + url);
             });
@@ -63,7 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('event', 'navigation', {
                     'event_category': 'navigation',
                     'event_label': linkText,
-                    'value': 1
+                    'value': 1,
+                    'send_to': 'G-WXYSSSTTMB'
                 });
                 console.log('Navigation click tracked: ' + linkText);
             });
@@ -79,7 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('event', 'social', {
                     'event_category': 'social',
                     'event_label': platform,
-                    'value': 1
+                    'value': 1,
+                    'send_to': 'G-WXYSSSTTMB'
                 });
                 console.log('Social media click tracked: ' + platform);
             });
@@ -94,7 +115,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     gtag('event', 'view_section', {
                         'event_category': 'engagement',
                         'event_label': sectionId,
-                        'value': 1
+                        'value': 1,
+                        'send_to': 'G-WXYSSSTTMB'
                     });
                     console.log('Section view tracked: ' + sectionId);
                     // Unobserve after first view to prevent multiple triggers
@@ -114,7 +136,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('event', 'view_item', {
                     'event_category': 'certificates',
                     'event_label': 'View All Certificates',
-                    'value': 1
+                    'value': 1,
+                    'send_to': 'G-WXYSSSTTMB'
                 });
                 console.log('Certificates view tracked');
             });
@@ -127,22 +150,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 gtag('event', 'view_item', {
                     'event_category': 'blog',
                     'event_label': 'Visit Tech Blog',
-                    'value': 1
+                    'value': 1,
+                    'send_to': 'G-WXYSSSTTMB'
                 });
                 console.log('Blog visit tracked');
-            });
-        }
-        
-        // Track contact form interactions if present
-        const contactForm = document.querySelector('form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                gtag('event', 'generate_lead', {
-                    'event_category': 'contact',
-                    'event_label': 'Contact Form Submission',
-                    'value': 1
-                });
-                console.log('Contact form submission tracked');
             });
         }
         
@@ -150,7 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
         gtag('event', 'test_event', {
             'event_category': 'testing',
             'event_label': 'Analytics Test',
-            'value': 1
+            'value': 1,
+            'send_to': 'G-WXYSSSTTMB'
         });
         console.log('Test event sent to Google Analytics');
         
