@@ -369,5 +369,21 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/analytics.js"></script>
+    <script>
+        console.log("Inline script executed");
+        setTimeout(function() {
+            if (typeof gtag === "function") {
+                console.log("gtag function exists");
+                gtag("event", "inline_test", {
+                    "event_category": "testing",
+                    "event_label": "Inline Test",
+                    "value": 1
+                });
+                console.log("Inline test event sent");
+            } else {
+                console.error("gtag function not found");
+            }
+        }, 2000);
+    </script>
 </body>
 </html>
